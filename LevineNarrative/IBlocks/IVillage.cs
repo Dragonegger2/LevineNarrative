@@ -8,7 +8,8 @@ namespace LevineNarrative.BuildingBlocks
 {
     public interface IVillage
     {
+        string VillageName { get; set; }
         List<IStar> Stars { get; set; }
-        void AddStar(IStar star);
+        int MacroPassion { get; }
     }
 }

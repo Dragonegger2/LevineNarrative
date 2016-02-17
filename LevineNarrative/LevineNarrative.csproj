@@ -35,7 +35,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Blocks\BasicPassion.cs" />
+    <Compile Include="Blocks\BaseThreshhold.cs" />
+    <Compile Include="Blocks\BaseVillage.cs" />
+    <Compile Include="Blocks\BasePassion.cs" />
     <Compile Include="Blocks\BaseStar.cs" />
     <Compile Include="IBlocks\IPassion.cs" />
     <Compile Include="IBlocks\IStar.cs" />
