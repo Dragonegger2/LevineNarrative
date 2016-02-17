@@ -1,0 +1,19 @@
+{
+  "name": "levinenarrative",
+  "version": "0.0.1",
+  "description": "Builds upon the system discussed in Ken Levine's 'Narrative Lego' talk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dragonegger2/LevineNarrative.git"
+  },
+  "author": "Trent Lennon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dragonegger2/LevineNarrative/issues"
+  },
+  "homepage": "https://github.com/Dragonegger2/LevineNarrative#readme"
+}
