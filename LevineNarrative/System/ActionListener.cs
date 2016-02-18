@@ -24,7 +24,7 @@ namespace LevineNarrative.System
         /// TODO: Need to find out if a list only ever handles references. If that is the case then I do not need the ref keyword.
         /// </summary>
         /// <param name="passion"></param>
-        public void AddManagedPassion(ref IPassion passion)
+        public void AddManagedPassion(IPassion passion)
         {
             ManagedPassions.Add(passion);
         }
@@ -35,7 +35,7 @@ namespace LevineNarrative.System
         /// </summary>
         /// <param name="passion"></param>
         /// <param name="strength"></param>
-        public void FireEvent(PassionValue passion, int strength)
+        public void FireEvent(string passion, int strength)
         {
             var hates = ManagedPassions.FindAll(i => i.Hates.Contains(passion));
             foreach (var iter in hates)

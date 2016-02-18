@@ -8,10 +8,13 @@ namespace LevineNarrative.Blocks
     {
         public string VillageName { get; set; }
         public List<IStar> Stars { get; set; }
+        public List<IThreshold> VillageThreshold { get; set; }
 
         public int MacroPassion 
         {
             get { return 0; }
         }
+
+        
     }
 }

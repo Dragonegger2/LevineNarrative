@@ -14,6 +14,7 @@ namespace LevineNarrative.BuildingBlocks
         List<IPassion> Passions { get; }
         List<IPassion> ActivePassions { get; }
 
+        //TODO: Have it automagically assign massion.
         void AssignPassions();
     }
 }

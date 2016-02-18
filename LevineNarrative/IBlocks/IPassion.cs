@@ -12,15 +12,27 @@ namespace LevineNarrative
         string PassionName { get; set; }
         float PassionValue { get; set; }
 
-        List<PassionValue> Likes { get; set; }
-        List<PassionValue> Hates { get; set; } 
+        List<string> Likes { get; set; }
+        List<string> Hates { get; set; } 
         
         List<IThreshold> Thresholds { get; }
         List<IThreshold> ThresholdsHit();
     }
 
+    /// <summary>
+    /// Not expressive enough to encompass different feelings and hyper focused 
+    /// </summary>
     public enum PassionValue
     {
-        Cats, Dogs
+        Elves, Brown
+    }
+
+    public class Principles
+    {
+        //Singular Noun
+        public string Noun { get; set; }
+
+        //0-to-many Adjectives
+        public List<string> Adjective { get; set;}
     }
 }
