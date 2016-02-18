@@ -35,13 +35,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Blocks\BaseThreshhold.cs" />
+    <Compile Include="Blocks\BaseThreshold.cs" />
     <Compile Include="Blocks\BaseVillage.cs" />
     <Compile Include="Blocks\BasePassion.cs" />
     <Compile Include="Blocks\BaseStar.cs" />
     <Compile Include="IBlocks\IPassion.cs" />
     <Compile Include="IBlocks\IStar.cs" />
-    <Compile Include="IBlocks\IThreshhold.cs" />
+    <Compile Include="IBlocks\IThreshold.cs" />
     <Compile Include="IBlocks\IVillage.cs" />
     <Compile Include="Narrative.cs" />
     <Compile Include="System\ActionListener.cs" />

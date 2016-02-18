@@ -11,5 +11,6 @@ namespace LevineNarrative.BuildingBlocks
         string VillageName { get; set; }
         List<IStar> Stars { get; set; }
         int MacroPassion { get; }
+        List<IThreshold> VillageThreshold { get; set; }
     }
 }

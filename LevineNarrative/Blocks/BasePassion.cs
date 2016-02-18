@@ -12,7 +12,7 @@ namespace LevineNarrative.Blocks
     {
         public BasePassion()
         {
-            Threshholds = new List<IThreshhold>();
+            Thresholds = new List<IThreshold>();
             Likes = new List<PassionValue>();
             Hates = new List<PassionValue>();
         }
@@ -24,12 +24,12 @@ namespace LevineNarrative.Blocks
         public List<PassionValue> Likes { get; set; }
         public List<PassionValue> Hates { get; set; }
 
-        public List<IThreshhold> Threshholds { get; set; }
+        public List<IThreshold> Thresholds { get; set; }
 
-        public List<IThreshhold> ThreshholdsHit()
+        public List<IThreshold> ThresholdsHit()
         {
-            var threshholds = Threshholds.FindAll(i => i.Value < 0 && i.Value >= PassionValue);
-            threshholds.AddRange(Threshholds.FindAll(i => i.Value > 0 && i.Value <= PassionValue));
+            var threshholds = Thresholds.FindAll(i => i.Value < 0 && i.Value >= PassionValue);
+            threshholds.AddRange(Thresholds.FindAll(i => i.Value > 0 && i.Value <= PassionValue));
             return threshholds;
         }
 

@@ -15,8 +15,8 @@ namespace LevineNarrative
         List<PassionValue> Likes { get; set; }
         List<PassionValue> Hates { get; set; } 
         
-        List<IThreshhold> Threshholds { get; }
-        List<IThreshhold> ThreshholdsHit();
+        List<IThreshold> Thresholds { get; }
+        List<IThreshold> ThresholdsHit();
     }
 
     public enum PassionValue

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LevineNarrative.BuildingBlocks
 {
-    public interface IThreshhold
+    public interface IThreshold
     {
         string Name { get; set; }
         string Description {get; set;}

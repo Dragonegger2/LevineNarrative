@@ -7,9 +7,9 @@ using LevineNarrative.BuildingBlocks;
 
 namespace LevineNarrative.Blocks
 {
-    public class BaseThreshhold : IThreshhold
+    public class BaseThreshold : IThreshold
     {
-        public BaseThreshhold(string name, string desc, int val)
+        public BaseThreshold(string name, string desc, int val)
         {
             Name = name;
             Description = desc;
