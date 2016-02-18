@@ -13,11 +13,16 @@ namespace LevineNarrative.Blocks
         public BasePassion()
         {
             Threshholds = new List<IThreshhold>();
+            Likes = new List<PassionValue>();
+            Hates = new List<PassionValue>();
         }
         public string PassionName { get; set; }
 
         //Floating passion value.
         public float PassionValue { get; set; }
+
+        public List<PassionValue> Likes { get; set; }
+        public List<PassionValue> Hates { get; set; }
 
         public List<IThreshhold> Threshholds { get; set; }
 

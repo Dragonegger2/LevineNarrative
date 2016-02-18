@@ -11,7 +11,16 @@ namespace LevineNarrative
     {
         string PassionName { get; set; }
         float PassionValue { get; set; }
+
+        List<PassionValue> Likes { get; set; }
+        List<PassionValue> Hates { get; set; } 
+        
         List<IThreshhold> Threshholds { get; }
         List<IThreshhold> ThreshholdsHit();
+    }
+
+    public enum PassionValue
+    {
+        Cats, Dogs
     }
 }
