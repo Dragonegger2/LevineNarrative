@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LevineNarrative.BuildingBlocks;
+using LevineNarrative.JSONConverter;
+using Newtonsoft.Json;
 
 namespace LevineNarrative.Blocks
 {
@@ -19,7 +21,11 @@ namespace LevineNarrative.Blocks
 
         public int MacroPassion { get; private set; }
         public string Name { get; set; }
+
+        [JsonConverter(typeof(List<PassionConverter>))]
         public List<IPassion> Passions { get; private set; }
+
+        [JsonConverter(typeof(PassionConverter))]
         public List<IPassion> ActivePassions { get; private set; }
         public void AssignPassions()
         {

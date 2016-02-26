@@ -1,0 +1,26 @@
+{
+  "MacroPassion": 0,
+  "Name": "Trump",
+  "Passions": [{
+    "PassionName": "Cat Afficianado",
+    "PassionValue": 10.0,
+    "Likes": ["Elves"],
+    "Hates": ["Brown"],
+    "Positives": [],
+    "Negatives": [],
+    "Thresholds": [{
+      "Name": "Cat-like affinity",
+      "Description": "Your burgeoning love for cats has allowed for this bonus to manifest.",
+      "Value": 10
+    }, {
+      "Name": "Cat-like reflexes",
+      "Description": "Your reflexes are no longer like that of a dead cat. More like a live one. Or something like that.",
+      "Value": 20
+    }, {
+      "Name": "Dog-like affinity",
+      "Description": "Your burgeoning love for dogs has brough this burden on you.",
+      "Value": -10
+    }]
+  }],
+  "ActivePassions": []
+}

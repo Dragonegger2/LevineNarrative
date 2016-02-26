@@ -12,8 +12,8 @@ namespace LevineNarrative
         string PassionName { get; set; }
         float PassionValue { get; set; }
 
-        List<string> Likes { get; set; }
-        List<string> Hates { get; set; } 
+        List<Principles> Positives { get; set; }
+        List<Principles> Negatives { get; set; } 
         
         List<IThreshold> Thresholds { get; }
         List<IThreshold> ThresholdsHit();
@@ -29,6 +29,26 @@ namespace LevineNarrative
 
     public class Principles
     {
+        public Principles(string Noun)
+        {
+            this.Noun = Noun;
+            Adjective = new List<string>();
+        }
+
+        //TODO: There might be issues if I were to leave the Noun as an empty string. 
+        //It could actually match.
+        public Principles(List<string> Adjectives)
+        {
+            this.Adjective = new List<string>();
+            this.Adjective = Adjectives;
+            this.Noun = null;
+        }
+
+        public Principles(string Noun, List<string> Adjective)
+        {
+            this.Noun = Noun;
+            this.Adjective = Adjective;
+        }
         //Singular Noun
         public string Noun { get; set; }
 
