@@ -7,8 +7,16 @@ using LevineNarrative.BuildingBlocks;
 
 namespace LevineNarrative.Blocks
 {
+    /// <summary>
+    /// A 
+    /// </summary>
     public class BaseStar : IStar
     {
+        public BaseStar()
+        {
+            Passions = new List<IPassion>();
+        }
+
         public BaseStar(List<IPassion> passions)
         {
             Passions = passions;
@@ -17,7 +25,6 @@ namespace LevineNarrative.Blocks
         protected int MAX_ACTIVE_PASSIONS = 3;
         protected int MAX_HIDDEN_PASSIONS = 1;
 
-        public int MacroPassion { get; private set; }
         public string Name { get; set; }
         public List<IPassion> Passions { get; private set; }
         public List<IPassion> ActivePassions { get; private set; }
@@ -25,5 +32,35 @@ namespace LevineNarrative.Blocks
         {
             throw new NotImplementedException();
         }
+
+        public int MacroPassion
+        {
+            get
+            {
+                float avg = 0;
+
+                foreach (var passion in Passions)
+                {
+                    avg += passion.PassionValue;
+                }
+
+                avg /= Passions.Count;
+
+                return (int)avg; // this will truncate the value, should look at better control.
+            }
+        }
+
+        public override string ToString()
+        {
+            string str = Name + ":\n";
+
+            foreach(var passion in Passions)
+            {
+                str += passion.ToString();
+            }
+
+            return str;
+        }
+
     }
 }
