@@ -21,6 +21,6 @@ namespace LevineNarrative
 
     public enum PassionValue
     {
-        Cats, Dogs
+        Cats, Dogs, Noodles, Rice, Testing, NotTesting
     }
 }

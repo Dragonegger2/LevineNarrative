@@ -18,9 +18,7 @@ namespace LevineNarrative
         private static void passionsTest()
         {
             var passionList = new List<IPassion>();
-            var david = new BaseStar(passionList);
-
-            david.Name = "David";
+            var david = new BaseStar(passionList, "David");
 
             var passionCats = new BasePassion();
             passionCats.PassionValue = 10;
@@ -67,6 +65,7 @@ namespace LevineNarrative
 
             david.Name = "David";
 
+            // Create some passions for testing
             var passionCats = new BasePassion();
             passionCats.PassionValue = 10;
             passionCats.PassionName = "Cats";
@@ -114,7 +113,7 @@ namespace LevineNarrative
             passionManager.ManagedPassions.Add(passionNoodles);
             passionManager.ManagedPassions.Add(passionTest);
 
-            // Add the stars, and shoot for them
+            // Add the stars, and shoot for them  <----- Who the hell commented this code? -Willem
             testVillage.Stars.Add(trent);
             testVillage.Stars.Add(david);
             testVillage.Stars.Add(testBoy);
@@ -126,6 +125,8 @@ namespace LevineNarrative
 
             // Now do some stuff to the stars.
             passionManager.FireEvent(PassionValue.Cats, 20);
+            passionManager.FireEvent(PassionValue.Cats, 30);
+            passionManager.FireEvent(PassionValue.Noodles, 40);
 
             Console.WriteLine("Village after testing");
             Console.WriteLine(testVillage);

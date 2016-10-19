@@ -45,6 +45,7 @@
     <Compile Include="IBlocks\IVillage.cs" />
     <Compile Include="Narrative.cs" />
     <Compile Include="System\ActionListener.cs" />
+    <Compile Include="System\InstructionVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

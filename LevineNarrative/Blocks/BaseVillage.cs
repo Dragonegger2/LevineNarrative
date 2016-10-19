@@ -59,6 +59,13 @@ namespace LevineNarrative.Blocks
             foreach(var star in Stars)
             {
                 str += star.ToString() + "\n";
+                foreach(var passion in star.Passions)
+                {
+                    foreach( var pThresh in passion.Thresholds)
+                    {
+                        str += pThresh.ToString() + "\n";
+                    }
+                }
             }
 
             foreach(var thresh in VillageThreshold)

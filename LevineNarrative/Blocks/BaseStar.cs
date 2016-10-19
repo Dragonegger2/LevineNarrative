@@ -17,9 +17,10 @@ namespace LevineNarrative.Blocks
             Passions = new List<IPassion>();
         }
 
-        public BaseStar(List<IPassion> passions)
+        public BaseStar(List<IPassion> passions, String name)
         {
             Passions = passions;
+            Name = name;
         }
 
         protected int MAX_ACTIVE_PASSIONS = 3;
